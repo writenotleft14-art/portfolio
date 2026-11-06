@@ -386,6 +386,19 @@ img {
   font-weight: 700;
 }
 
+.timeline-date {
+  display: flex;
+  align-items: center;
+  min-height: 72px;
+}
+
+.timeline-brand {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
 .timeline-content h3 {
   margin: 0 0 0.2rem;
   font-size: 1.25rem;
