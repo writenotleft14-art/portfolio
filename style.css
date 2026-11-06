@@ -389,13 +389,13 @@ img {
 .timeline-date {
   display: flex;
   align-items: center;
-  min-height: 72px;
+  min-height: 18px;
 }
 
 .timeline-brand {
   display: block;
-  width: 72px;
-  height: 72px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
 }
 
