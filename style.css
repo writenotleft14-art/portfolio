@@ -141,7 +141,6 @@ img {
 }
 
 .eyebrow,
-.section-code,
 .project-tag,
 .footer-bottom {
   font-family: var(--mono);
@@ -246,15 +245,7 @@ img {
 }
 
 .section-heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 2rem;
   margin-bottom: 1.6rem;
-}
-
-.section-title {
-  min-width: 0;
 }
 
 .section-heading .eyebrow {
@@ -267,14 +258,6 @@ img {
   line-height: 1.1;
 }
 
-.section-code {
-  margin: 0 0 0.45rem;
-  color: var(--violet);
-  font-size: 0.62rem;
-  opacity: 0.42;
-  white-space: nowrap;
-}
-
 .about-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
@@ -282,7 +265,7 @@ img {
   gap: 2rem;
 }
 
-.about-grid > div:first-child {
+.about-copy {
   max-width: 760px;
 }
 
@@ -294,6 +277,7 @@ img {
 .skills-panel {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.6rem;
   gap: 1rem;
 }
 
@@ -432,20 +416,6 @@ img {
   gap: 2rem;
 }
 
-.footer-heading {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer-heading .eyebrow {
-  margin: 0;
-}
-
-.footer-heading .section-code {
-  margin: 0;
-}
-
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -496,6 +466,7 @@ img {
 
   .skills-panel {
     grid-template-columns: 1fr;
+    margin-top: 0;
   }
 }
 
@@ -520,15 +491,6 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .section-heading {
-    display: block;
-  }
-
-  .section-code {
-    display: inline-block;
-    margin-top: 0.75rem;
-  }
-
   .timeline-item {
     grid-template-columns: 24px minmax(0, 1fr);
     gap: 0.7rem;
@@ -538,10 +500,6 @@ img {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.8rem;
-  }
-
-  .footer-heading {
-    flex-wrap: wrap;
   }
 
   .contact-links {
